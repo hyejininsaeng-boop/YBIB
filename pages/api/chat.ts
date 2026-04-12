@@ -25,10 +25,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
   if (!messages || !Array.isArray(messages)) return res.status(400).json({ error: 'Invalid request' });
 
   try {
-    const prompt = buildPrompt(messages);
-
     const response = await fetch(
-      'https://router.huggingface.co/hf-inference/models/mistralai/Mistral-7B-Instruct-v0.3',
+      'https://router.huggingface.co/hf-inference/v1/chat/completions',
       {
         method: 'POST',
         headers: {
@@ -36,14 +34,13 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
           'Content-Type': 'application/json',
         },
         body: JSON.stringify({
-          inputs: prompt,
-          parameters: {
-            max_new_tokens: 1024,
-            temperature: 0.7,
-            top_p: 0.9,
-            repetition_penalty: 1.1,
-            return_full_text: false,
-          },
+          model: 'mistralai/Mistral-7B-Instruct-v0.3',
+          messages: [
+            { role: 'system', content: SYSTEM_PROMPT },
+            ...messages,
+          ],
+          max_tokens: 1024,
+          temperature: 0.7,
         }),
       }
     );
@@ -54,7 +51,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     }
 
     const data = await response.json();
-    const text = (data[0]?.generated_text || '').trim();
+    const text = (data.choices?.[0]?.message?.content || '').trim();
 
     try {
       const jsonMatch = text.match(/\{[\s\S]*\}/);
@@ -75,17 +72,4 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     console.error('HF API error:', error);
     return res.status(500).json({ error: '일시적인 오류가 발생했습니다. 잠시 후 다시 시도해주세요.' });
   }
-}
-
-function buildPrompt(messages: { role: string; content: string }[]): string {
-  let prompt = `<s>[INST] ${SYSTEM_PROMPT}\n\n`;
-  for (let i = 0; i < messages.length; i++) {
-    const msg = messages[i];
-    if (msg.role === 'user') {
-      prompt += i === 0 ? `${msg.content} [/INST]` : ` [INST] ${msg.content} [/INST]`;
-    } else if (msg.role === 'assistant') {
-      prompt += ` ${msg.content} </s>`;
-    }
-  }
-  return prompt;
 }
