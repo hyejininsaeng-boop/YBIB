@@ -41,7 +41,7 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
     const prompt = buildPrompt(messages);
 
     const response = await hf.textGeneration({
-      model: 'mistralai/Mistral-7B-Instruct-v0.3',
+     model: 'HuggingFaceH4/zephyr-7b-beta',
       inputs: prompt,
       parameters: {
         max_new_tokens: 1024,
