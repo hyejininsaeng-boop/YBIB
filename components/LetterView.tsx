@@ -251,7 +251,68 @@ const Newsletter5 = () => (
 );
 
 
+const Newsletter6 = () => (
+    <div>
+        <p className="mb-4">안녕하십니까? 어느덧 만물이 생동하는 4월이 다가오고 있네요. 평소 본교의 교육활동에 깊은 신뢰와 따뜻한 관심을 보내주시는 학부모님께 진심으로 감사의 인사를 드립니다.</p>
+        <p className="mb-4">본교는 우리 학생들이 급변하는 미래 사회를 주도할 역량을 갖출 수 있도록, 국제 공인 교육과정인 IB MYP를 도입하여 운영하고 있습니다. 특히 오는 5~6월 중, 'IB 월드 스쿨 인증'이라는 뜻깊은 결실을 앞두고 본교의 교육 방향과 IB 교육의 핵심 내용을 안내해 드리고자 합니다.</p>
+
+        <Card title="🌱 IB MYP(Middle Years Programme)란 무엇인가요?">
+            <p>IB MYP는 단순한 지식의 습득을 넘어, 학생들이 스스로 질문을 던지고 탐구하며 비판적으로 사고하는 힘을 기르는 데 중점을 둔 교육과정입니다.</p>
+            <ul className="list-disc pl-5 mt-2">
+                <li><strong>탐구 중심 학습:</strong> 교과서 속 지식을 실생활과 연결하여 스스로 해답을 찾아갑니다.</li>
+                <li><strong>개념 이해 및 적용:</strong> 단편적인 사실 암기가 아닌, 지식의 원리와 흐름을 이해합니다.</li>
+                <li><strong>과정 중심 평가:</strong> 결과 수치보다 학습이 이루어지는 과정과 성장을 중요하게 평가합니다.</li>
+            </ul>
+        </Card>
+
+        <Card title="🔍 기존 교육과 무엇이 달라질까요?">
+            <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                    <thead>
+                        <tr className="bg-blue-50 dark:bg-slate-700">
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">구분</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">기존 교육 (전통적 방식)</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">IB MYP 교육 (본교 지향점)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">학습 방식</td><td className="border border-slate-300 dark:border-slate-600 p-2">지식 전달 및 암기 중심</td><td className="border border-slate-300 dark:border-slate-600 p-2">이해와 비판적 사고 중심</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">정답 확인</td><td className="border border-slate-300 dark:border-slate-600 p-2">정해진 하나의 정답 찾기</td><td className="border border-slate-300 dark:border-slate-600 p-2">다양한 해석과 창의적 대안 존중</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">평가 체계</td><td className="border border-slate-300 dark:border-slate-600 p-2">일회성 지필평가 위주</td><td className="border border-slate-300 dark:border-slate-600 p-2">수행평가 및 상시 과정 평가</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">교실 풍경</td><td className="border border-slate-300 dark:border-slate-600 p-2">교사 주도의 일방향 수업</td><td className="border border-slate-300 dark:border-slate-600 p-2">학생 주도의 참여형·협력형 수업</td></tr>
+                    </tbody>
+                </table>
+            </div>
+            <p className="mt-3 italic text-slate-500">"학생들은 이제 '무엇을 아는가'를 넘어, '아는 것을 어떻게 활용하는가'를 배웁니다."</p>
+        </Card>
+
+        <Card title="🌎 IB 교육이 지향하는 학생의 모습">
+            <p>IB 교육은 지적으로 유능할 뿐만 아니라 타인을 존중하는 '학습자 상(Learner Profile)'을 추구합니다.</p>
+            <ul className="list-disc pl-5 mt-2">
+                <li>질문하고 탐구하며 배움을 즐기는 학생</li>
+                <li>자신의 생각을 논리적이고 당당하게 표현하는 학생</li>
+                <li>나와 다른 타인의 가치관을 존중하고 포용하는 학생</li>
+                <li>자신의 학습 과정을 스스로 돌아보며 끊임없이 성장하는 학생</li>
+            </ul>
+        </Card>
+
+        <Card title="🤝 우리 아이의 성장을 위한 가정 내 협조 사항">
+            <p className="mb-2">교육의 완성은 학교와 가정의 연대에서 이루어집니다. 아이들이 새로운 배움에 자신감을 가질 수 있도록 다음의 실천을 부탁드립니다.</p>
+            <ol className="list-decimal pl-5 space-y-1">
+                <li>결과보다는 '과정'을 격려해 주세요.</li>
+                <li>"이번 프로젝트를 통해 무엇을 새롭게 알게 되었니?"라고 물어봐 주세요.</li>
+                <li>질문을 통해 사고력을 확장해 주세요. "왜 그렇게 생각했니?", "다른 방법은 없을까?"와 같은 열린 질문이 아이의 생각을 키웁니다.</li>
+                <li>아이의 고유한 의견을 존중해 주세요. 아이가 스스로 논리를 세워가는 과정을 지켜봐 주시고 응원해 주세요.</li>
+                <li>본교 홈페이지 내 [YBIB 후보학교] 세션을 통해 IB 교육과정의 실제 운영 사례와 다양한 학생 활동 소식을 확인하실 수 있습니다.</li>
+                <li>IB 교육에서 '성찰'은 배움을 내면화하는 가장 중요한 단계입니다. 학생들이 매달 작성하는 'YBIB 성찰지'를 통해 자기주도적 학습 역량을 키우고 있습니다. 하단 [학부모 성찰]란에 아이의 노력을 응원하는 피드백을 기록해 주세요.</li>
+            </ol>
+        </Card>
+        <p className="text-sm text-slate-500 mt-4 text-center">본교 교직원 모두는 다가오는 인증 평가를 철저히 준비하여, 우리 학생들이 최고의 교육 환경에서 꿈을 펼칠 수 있도록 최선을 다하겠습니다.</p>
+    </div>
+);
+
 const newsletters = [
+  { id: 6, issue: '2026-22호', date: '2026. 3. 27.', title: '2026년 용북중학교 IB MYP 프로그램 안내', Content: Newsletter6 },
   { id: 5, issue: '2025-66호', date: '2025. 7. 10.', title: '모든 교과에서 피어나는 탐구와 소통의 순간들', Content: Newsletter5 },
   { id: 4, issue: '2025-53호', date: '2025. 6. 10.', title: '세상을 향한 눈을 키우는 교육: IB MYP의 세계적 맥락과 학습 전략', Content: Newsletter4 },
   { id: 3, issue: '2025-44호', date: '2025. 5. 12.', title: '[IB MYP 학습자상]에 대한 안내', Content: Newsletter3 },
