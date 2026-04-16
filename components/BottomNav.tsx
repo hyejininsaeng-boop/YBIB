@@ -14,18 +14,26 @@ const NavItem: React.FC<{
   setActiveView: (view: AppView) => void;
   iconClass: string;
   label: string;
-}> = ({ view, activeView, setActiveView, iconClass, label }) => {
+  highlighted?: boolean;
+}> = ({ view, activeView, setActiveView, iconClass, label, highlighted }) => {
   const isActive = activeView === view;
   const activeClasses = 'text-blue-600 dark:text-blue-400';
-  const inactiveClasses = 'text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400';
-  
+  const inactiveClasses = highlighted
+    ? 'text-blue-500 dark:text-blue-300 hover:text-blue-600 dark:hover:text-blue-400'
+    : 'text-slate-500 dark:text-slate-400 hover:text-blue-600 dark:hover:text-blue-400';
+
   return (
     <button
       onClick={() => setActiveView(view)}
-      className={`flex flex-col items-center justify-center w-full transition-colors duration-200 ${isActive ? activeClasses : inactiveClasses}`}
+      className={`relative flex flex-col items-center justify-center w-full transition-colors duration-200
+        ${highlighted ? 'bg-blue-50 dark:bg-blue-900/30 border-t-2 border-blue-500' : ''}
+        ${isActive ? activeClasses : inactiveClasses}`}
     >
+      {highlighted && !isActive && (
+        <span className="absolute top-1 right-[calc(50%-14px)] w-2 h-2 bg-blue-500 rounded-full animate-pulse"></span>
+      )}
       <i className={`${iconClass} text-xl`}></i>
-      <span className="text-xs mt-1">{label}</span>
+      <span className={`mt-1 leading-tight text-center whitespace-pre-line ${highlighted ? 'text-[9px]' : 'text-xs'}`}>{label}</span>
     </button>
   );
 };
@@ -65,8 +73,9 @@ export const BottomNav: React.FC<BottomNavProps> = ({ activeView, setActiveView,
         view={AppView.Contact}
         activeView={activeView}
         setActiveView={setActiveView}
-        iconClass="fas fa-user-headset"
-        label="문의"
+        iconClass="fas fa-house-chimney-user"
+        label={"학부모\n소통방"}
+        highlighted={true}
       />
     </nav>
   );

@@ -311,7 +311,258 @@ const Newsletter6 = () => (
     </div>
 );
 
+const Newsletter7 = () => (
+    <div>
+        <p className="mb-4">용북중학교 IB 프로그램의 1학기 수업 활동 사례와 2학기 IB 총괄평가를 안내드립니다.</p>
+
+        <Card title="1학년 미술 수업활동 — UNIT 1. 자화상">
+            <p><strong>평가 기준:</strong> A. 조사하기 / B. 창작 및 공연하기</p>
+            <p className="mt-2"><strong>탐구 활동:</strong> IB 학습자상 탐색과 자화상 감상·표현을 통한 정체성 탐구</p>
+            <ul className="list-disc pl-5 mt-2 space-y-1">
+                <li>자화상 작품을 스스로 선택하고 조사한 후, 인상 깊었던 이유와 표현 특징을 발표하며 자화상의 의미와 표현 방식을 학습</li>
+                <li>감상과 비평의 차이점을 찾아보고 자신의 생각을 포스트잇에 서술하며 다른 친구들과 비교·분석</li>
+                <li>IB 학습자상에 대해 학습한 뒤, 다양한 명화 속 인물을 감상하며 각 작품에서 드러나는 학습자상을 유추하는 활동</li>
+            </ul>
+            <p className="mt-2 text-sm text-slate-500"><strong>학습접근방법(ATL):</strong> 비판적 사고기능 — 시각적 요소와 맥락을 바탕으로 작품의 의미를 해석하고 판단하기</p>
+        </Card>
+
+        <Card title="2학년 영어 수업활동 — UNIT 1. My Happy Everyday Life">
+            <p><strong>평가 기준:</strong> C. Speaking / D. Writing</p>
+            <p className="mt-2"><strong>탐구 활동:</strong> 행복한 일상생활과 관련된 시를 쓰고 암송하기</p>
+            <ul className="list-disc pl-5 mt-2 space-y-1">
+                <li>자신의 정체성을 드러낼 수 있는 행복한 일상과 관련된 다양한 단어를 학습한 후 타이포그래피로 제작</li>
+                <li>스스로 일상생활 속에서 행복을 느끼는 순간들을 떠올려 보게 하며, 자신만의 행복한 경험을 영어로 표현</li>
+                <li>자신의 감정과 생각을 창의적으로 표현하는 능력을 기름</li>
+            </ul>
+            <p className="mt-2 text-sm text-slate-500"><strong>학습접근방법(ATL):</strong> 의사소통 기능 / 대인관계 기능 — 청자로서 동료의 아이디어를 적극적으로 듣기</p>
+        </Card>
+
+        <Card title="2학기 IB 총괄평가 안내 — 1학년">
+            <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                    <thead>
+                        <tr className="bg-blue-50 dark:bg-slate-700">
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">교과목</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 A</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 B</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 C</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">국어</td><td className="border border-slate-300 dark:border-slate-600 p-2">매체와 글의 특성 분석하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">논리적이고 일관된 글의 구조 조직화하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">작품과 자신의 삶을 연결하는 성찰하는 글쓰기</td><td className="border border-slate-300 dark:border-slate-600 p-2">논리적인 글의 구조와 정확한 어휘·문법 사용하여 글쓰기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">영어</td><td className="border border-slate-300 dark:border-slate-600 p-2">외국인 친구에게 소개하는 담화 듣기</td><td className="border border-slate-300 dark:border-slate-600 p-2">소개하는 글 읽고 파악하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">내 물건 중 무료나눔 하고 싶은 물건 홍보하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">무료나눔 하고 싶은 물건 홍보하는 글 쓰기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">개인과 사회</td><td colSpan={4} className="border border-slate-300 dark:border-slate-600 p-2 text-center">우리나라 각 지역의 특성을 이해하고 홍보 영상을 제작하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">과학</td><td className="border border-slate-300 dark:border-slate-600 p-2">물질의 상태 변화에 따른 에너지 출입, 기체 법칙 지식 이해하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">달(또는 화성) 탐사선 탐사 장치 설계 및 탐구 설계</td><td className="border border-slate-300 dark:border-slate-600 p-2">탐사 장치 설계 및 탐구 데이터 처리 및 평가</td><td className="border border-slate-300 dark:border-slate-600 p-2">기체 법칙 원리를 활용한 기술 조사 및 발표하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">수학</td><td className="border border-slate-300 dark:border-slate-600 p-2">삼각형 및 평행선 등 도형 작도하기 / 각 도형들의 성질 분석하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">주어진 자료의 패턴을 찾아 수학적 통계로 나타내기</td><td className="border border-slate-300 dark:border-slate-600 p-2">주어진 자료를 해석하여 더 나은 발전 방향성 제시하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">현실 세계에서 기하의 역사적 발달 과정 따라가기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">예술</td><td className="border border-slate-300 dark:border-slate-600 p-2">시와 그림의 공통점 분석하고 미술 표현의 특징에 대해 조사하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">고전주의 음악을 이해하고 음악 신문 만들기</td><td className="border border-slate-300 dark:border-slate-600 p-2">시에 어울리는 그림을 표현하여 시화 제작하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">셈여림 기호에 유의하여 노래 부르기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">체육</td><td className="border border-slate-300 dark:border-slate-600 p-2">배구 기초 기능 및 포지션 포트폴리오 작성하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">배드민턴 연습 계획서 작성하고 수행하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">배구 포지션 포트폴리오를 활용한 팀 공동 목표 수행하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">배드민턴과 체력 향상을 토대로 성찰 및 수행 개선하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">기술가정</td><td colSpan={4} className="border border-slate-300 dark:border-slate-600 p-2 text-center">청소년 건강 식습관 캠페인 제작하기</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+
+        <Card title="2학기 IB 총괄평가 안내 — 2학년">
+            <div className="overflow-x-auto">
+                <table className="w-full text-sm border-collapse">
+                    <thead>
+                        <tr className="bg-blue-50 dark:bg-slate-700">
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">교과목</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 A</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 B</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 C</th>
+                            <th className="border border-slate-300 dark:border-slate-600 p-2 text-left">평가기준 D</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">국어</td><td className="border border-slate-300 dark:border-slate-600 p-2">흥부전 스토리보드 구성하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">대상의 특성에 맞는 방법으로 설명문 쓰기</td><td className="border border-slate-300 dark:border-slate-600 p-2">흥부전 영상으로 재구성하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">대상의 특성에 맞는 방법으로 설명하는 발표하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">영어</td><td className="border border-slate-300 dark:border-slate-600 p-2">다양한 새활용 아이디어에 관한 토의 글 듣기 / 기네스 세계 기록 동물 이야기 듣기</td><td className="border border-slate-300 dark:border-slate-600 p-2">새활용의 의미와 다양한 예에 관한 글을 읽고 내용 이해하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">동물들의 놀라운 기록에 관한 내용 소개하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">도구를 사용하는 다양한 동물들에 관한 글을 읽고 세 컷 만화로 표현하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">개인과 사회</td><td className="border border-slate-300 dark:border-slate-600 p-2">세계대전 시대, 자유 주제 글쓰기</td><td className="border border-slate-300 dark:border-slate-600 p-2">제국주의 침략국과 피해국 입장에서 기사문 쓰기</td><td className="border border-slate-300 dark:border-slate-600 p-2">제국주의 침략국과 피해국 입장에서 기사문 쓰기</td><td className="border border-slate-300 dark:border-slate-600 p-2">세계대전 시대, 자유 주제 글쓰기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">과학</td><td className="border border-slate-300 dark:border-slate-600 p-2">해수 순환이 지구에 끼치는 영향 과학적으로 분석하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">여러가지 단열 장치를 알아보고 효과적인 단열방법 설계하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">여러가지 단열 장치를 알아보고 효과적인 단열방법 설계하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">해수 순환이 지구에 끼치는 영향 과학적으로 분석하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">수학</td><td className="border border-slate-300 dark:border-slate-600 p-2">삼각형의 내심과 외심 찾기 / 사각형의 성질 마인드맵 그리기</td><td className="border border-slate-300 dark:border-slate-600 p-2">게임에서 패턴 찾기</td><td className="border border-slate-300 dark:border-slate-600 p-2">경우의 수와 확률을 계산하여 공정한지 판단하고 수학적으로 구조화하여 발표하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">실생활에서 닮음의 사례를 조사하고, 닮음의 원리를 적용하여 문제 해결하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">예술</td><td className="border border-slate-300 dark:border-slate-600 p-2">시대별 음악적 특징을 이해하고 음악 신문 만들기</td><td className="border border-slate-300 dark:border-slate-600 p-2">3차원의 공간에 시각이미지 나타내기</td><td className="border border-slate-300 dark:border-slate-600 p-2">예술 가곡 이해 및 표현하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">자신이 표현한 작품 및 과정에 대해 평가하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">체육</td><td className="border border-slate-300 dark:border-slate-600 p-2">스텝박스의 기본 동작 및 효능 이해하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">축구 개인 기능 개발지 작성 및 수행하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">스텝박스 동작 창작 및 수행하기</td><td className="border border-slate-300 dark:border-slate-600 p-2">축구 전술 수행 및 성찰하기</td></tr>
+                        <tr><td className="border border-slate-300 dark:border-slate-600 p-2">기술가정</td><td colSpan={4} className="border border-slate-300 dark:border-slate-600 p-2 text-center">미래형 제조 기술 기반 제품 개발 프로젝트 제작하기</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </Card>
+
+        <p className="text-sm text-slate-500 mt-4 text-center">총괄평가는 단순한 점수가 아닌 학생들의 성장과 학습 여정을 보여주는 소중한 기록입니다. 평가 과정을 통해 학생들이 스스로 배움의 주체가 되어 성찰하고 발전할 수 있도록 함께 응원해 주시기 바랍니다.</p>
+    </div>
+);
+
+const Newsletter8 = () => (
+    <div>
+        <p className="mb-4">CP(Community Project, 공동체 프로젝트)는 학생들이 지역사회에 긍정적인 영향을 미치는 실질적인 행동을 통해 자기 주도적인 학습 역량을 기르는 학생 중심의 경험 학습 활동입니다.</p>
+
+        <Card title="CP(공동체 프로젝트)란?">
+            <p><strong>주제:</strong> 나의 미래 직업 탐색과 그에 맞는 커뮤니티 서비스(지역사회 봉사) 계획</p>
+            <p className="font-semibold mt-3">CP의 목표</p>
+            <ul className="list-disc pl-5 mt-1 space-y-1">
+                <li>진로 탐색 관련 지식 습득</li>
+                <li>협력과 소통 경험</li>
+                <li>발표 역량 향상</li>
+            </ul>
+        </Card>
+
+        <Card title="프로젝트 진행 단계">
+            <div className="space-y-3">
+                <div className="flex gap-3 items-start">
+                    <span className="bg-yellow-400 text-slate-900 font-bold rounded px-2 py-0.5 text-sm shrink-0">1단계 조사</span>
+                    <ul className="list-disc pl-4 text-sm space-y-0.5">
+                        <li>직업 분야 정보 수집 / 직무 분석, 교육과정 / 산업 동향 파악</li>
+                        <li>전문가 인터뷰 참여 / 조사 보고서 작성</li>
+                    </ul>
+                </div>
+                <div className="flex gap-3 items-start">
+                    <span className="bg-yellow-400 text-slate-900 font-bold rounded px-2 py-0.5 text-sm shrink-0">2단계 계획</span>
+                    <ul className="list-disc pl-4 text-sm space-y-0.5">
+                        <li>커뮤니티 서비스 기획 / 예산 계획 수립 / 역할 분담 결정</li>
+                        <li>실행 계획 작성 / 기획안 완성</li>
+                    </ul>
+                </div>
+                <div className="flex gap-3 items-start">
+                    <span className="bg-yellow-400 text-slate-900 font-bold rounded px-2 py-0.5 text-sm shrink-0">3단계 실행</span>
+                    <ul className="list-disc pl-4 text-sm space-y-0.5">
+                        <li>기획 서비스 실행 / 프로젝트 진행 기록 / 결과물 수집(사진)</li>
+                        <li>피드백 수렴 / 실행 결과 분석</li>
+                    </ul>
+                </div>
+            </div>
+        </Card>
+
+        <Card title="CP 연간 진행 계획">
+            <div className="space-y-2 text-sm">
+                {[
+                    ['4월', '프로젝트 개요 및 팀 편성'],
+                    ['5월', '진로 탐색과 조사 & 커뮤니티 서비스 기획'],
+                    ['6월', '서비스 계획 발표 및 피드백'],
+                    ['6~7월', '프로젝트 실행 계획 및 준비'],
+                    ['7~9월', '커뮤니티 봉사(서비스) 실행'],
+                    ['10~11월', '프로젝트 발표 준비'],
+                    ['12월', '용북중학교 진로 연계 CP 발표회 — 부스별 발표 진행!'],
+                ].map(([month, desc]) => (
+                    <div key={month} className="flex gap-3">
+                        <span className="font-bold text-blue-600 dark:text-blue-400 w-16 shrink-0">{month}</span>
+                        <span>{desc}</span>
+                    </div>
+                ))}
+            </div>
+        </Card>
+
+        <Card title="예시 팀 활동">
+            <div className="grid grid-cols-2 gap-3 text-sm">
+                <div className="bg-yellow-50 dark:bg-slate-700 rounded p-3">
+                    <p className="font-bold">의료 분야</p>
+                    <p>주제: 건강 캠페인</p>
+                    <p>활동: 식습관 교육</p>
+                    <p>봉사: 학교내 세미나</p>
+                </div>
+                <div className="bg-red-50 dark:bg-slate-700 rounded p-3">
+                    <p className="font-bold">IT 분야</p>
+                    <p>주제: 프로그래밍 교육</p>
+                    <p>활동: 워크숍 기획</p>
+                    <p>봉사: 기초 코딩 교육</p>
+                </div>
+                <div className="bg-green-50 dark:bg-slate-700 rounded p-3">
+                    <p className="font-bold">예술 분야</p>
+                    <p>주제: 미술 전시회</p>
+                    <p>활동: 작품 제작</p>
+                    <p>봉사: 학교내 전시</p>
+                </div>
+                <div className="bg-blue-50 dark:bg-slate-700 rounded p-3">
+                    <p className="font-bold">환경 분야</p>
+                    <p>주제: 재활용 캠페인</p>
+                    <p>활동: 환경 보호 활동</p>
+                    <p>봉사: 지역 청소 활동</p>
+                </div>
+            </div>
+        </Card>
+
+        <Card title="프로젝트 기대 효과">
+            <div className="grid grid-cols-2 gap-3 text-sm">
+                <div><strong>진로 탐색 역량 강화</strong><p className="text-slate-500">적성에 맞는 진로 발견</p></div>
+                <div><strong>협업 및 소통 능력 향상</strong><p className="text-slate-500">의사소통 능력 향상</p></div>
+                <div><strong>실제적 직업 경험</strong><p className="text-slate-500">직업 현실 이해</p></div>
+                <div><strong>사회적 가치 창출</strong><p className="text-slate-500">지역사회 기여 및 공동체 의식 함양</p></div>
+            </div>
+        </Card>
+
+        <p className="text-sm text-slate-500 mt-4 text-center">이번 공동체 프로젝트를 통해 학생들은 배움이 교실 안에만 머무는 것이 아니라, 세상과 연결되고 사람을 변화시킬 수 있다는 것을 경험할 수 있을 것입니다.</p>
+    </div>
+);
+
+const Newsletter9 = () => (
+    <div>
+        <p className="mb-4">학문적 정직성이란 내가 배운 것을 정직하게 표현하고 다른 사람의 아이디어나 정보를 올바르게 사용하는 태도입니다. 우리는 공정성과 정의감을 바탕으로 인간의 존엄성 및 권리를 존중하며, 성실하고 정직하게 행동합니다.</p>
+
+        <Card title="학문적 정직성이란?">
+            <p>학문적 정직성을 실천하려면 다음 네 가지가 필요합니다.</p>
+            <div className="grid grid-cols-2 gap-3 mt-3 text-sm text-center">
+                <div className="bg-red-50 dark:bg-slate-700 rounded p-3 font-bold">원칙을 지키는 태도</div>
+                <div className="bg-yellow-50 dark:bg-slate-700 rounded p-3 font-bold">ATL 역량<br/><span className="font-normal">(자기관리, 조사, 의사소통)</span></div>
+                <div className="bg-blue-50 dark:bg-slate-700 rounded p-3 font-bold">정확한 출처 표기</div>
+                <div className="bg-green-50 dark:bg-slate-700 rounded p-3 font-bold">비판적인 성찰</div>
+            </div>
+        </Card>
+
+        <Card title="APA 출처 표기법">
+            <p>미국 심리학회가 출판한 인용 스타일로, 본문에서 인용한 부분을 내주로 간략하게 표시하고 완전한 인용 정보는 참고 문헌에서 찾는 방식입니다.</p>
+            <div className="mt-3 space-y-3 text-sm">
+                <div>
+                    <p className="font-semibold text-blue-600 dark:text-blue-400">1. 본문 내 인용</p>
+                    <p>→ 인용한 내용 바로 뒤 괄호 안에 출처를 간단히 표기</p>
+                    <p className="mt-1"><strong>형식:</strong> (저자 성, 출판 연도, 페이지)</p>
+                    <p><strong>예시:</strong> ~ 에 따르면...(○○○, 2025, p.20)</p>
+                    <p className="text-slate-500">~ 에 필요한 것은...(ChatGPT에서 인용 또는 수정하여 사용, 2025)</p>
+                </div>
+                <div>
+                    <p className="font-semibold text-blue-600 dark:text-blue-400">2. 참고 문헌 목록</p>
+                    <ul className="list-disc pl-5 space-y-1">
+                        <li>본문에 등장한 모든 출처는 문서 끝에 따로 목록으로 정리</li>
+                        <li>순서는 저자명 기준 가나다/알파벳 순으로 정렬</li>
+                        <li><strong>형식:</strong> 저자.(출판연도).책 제목(판). 출판사.</li>
+                        <li><strong>예시:</strong> 최준영. (2020). 지구를 살리는 과학. 사이언스북스.</li>
+                    </ul>
+                </div>
+            </div>
+        </Card>
+
+        <Card title="학문적 정직성을 지키는 10가지 실천">
+            <ol className="list-decimal pl-5 space-y-1 text-sm">
+                <li>항상 진실하고 책임감 있게 행동하기</li>
+                <li>부정행위나 부당한 이익 추구 금지</li>
+                <li>의심스러운 상황에서는 정의롭게 행동하고 선생님께 알리기</li>
+                <li>자신의 행동에 책임지고 결과 수용하기</li>
+                <li>과제, 프로젝트에서 정직성 유지하기</li>
+                <li>학교 규칙을 지키고 학문적 정직성의 의미 이해하기</li>
+                <li>타인의 생각이나 작품은 반드시 인용하고 존중하기</li>
+                <li>자신의 장점과 약점을 인식하고 노력하기</li>
+                <li>디지털 환경에서도 협력과 공유의 윤리 실천하기</li>
+                <li>시간을 잘 관리하고 미루는 습관을 고치기</li>
+            </ol>
+        </Card>
+
+        <Card title="용북의 학문적 정직성 서약 — 우리의 약속">
+            <ol className="list-decimal pl-5 space-y-2 text-sm">
+                <li><strong>정직하게 학습하겠습니다.</strong><br/><span className="text-slate-500">과제, 프로젝트, 시험에서 정직하게 임하겠습니다.</span></li>
+                <li><strong>표절을 하지 않겠습니다.</strong><br/><span className="text-slate-500">다른 사람의 아이디어나 작품을 사용할 때 반드시 출처를 밝히겠습니다.</span></li>
+                <li><strong>부정행위를 하지 않겠습니다.</strong><br/><span className="text-slate-500">시험이나 과제에서 부당한 도움을 받거나 제공하지 않겠습니다.</span></li>
+                <li><strong>책임감 있는 학습자가 되겠습니다.</strong><br/><span className="text-slate-500">과제를 성실히 수행하고, 내 학습에 대해 책임을 지겠습니다.</span></li>
+                <li><strong>타인의 학습을 존중하겠습니다.</strong><br/><span className="text-slate-500">타인의 노력을 인정하고 공정한 학습 환경을 만들겠습니다.</span></li>
+            </ol>
+        </Card>
+
+        <p className="text-sm text-slate-500 mt-4 text-center">정직한 출처 표기, 타인의 생각 존중, 스스로에 대한 성찰은 미래의 학자, 리더, 시민으로서 여러분을 더 빛나게 해줄 중요한 약속입니다.</p>
+    </div>
+);
+
 const newsletters = [
+  { id: 9, issue: 'YBIB 레터 3호', date: '2025. 11.', title: '정직함을 배우는 교실, 세상을 바꾸는 첫 걸음', Content: Newsletter9 },
+  { id: 8, issue: 'YBIB 레터 2호', date: '2025. 10.', title: '배움이 세상과 만날 때: 함께 성장하는 여정', Content: Newsletter8 },
+  { id: 7, issue: 'YBIB 레터 1호', date: '2025. 9.', title: '성장으로 이어지는 배움의 여정', Content: Newsletter7 },
   { id: 6, issue: '2026-22호', date: '2026. 3. 27.', title: '2026년 용북중학교 IB MYP 프로그램 안내', Content: Newsletter6 },
   { id: 5, issue: '2025-66호', date: '2025. 7. 10.', title: '모든 교과에서 피어나는 탐구와 소통의 순간들', Content: Newsletter5 },
   { id: 4, issue: '2025-53호', date: '2025. 6. 10.', title: '세상을 향한 눈을 키우는 교육: IB MYP의 세계적 맥락과 학습 전략', Content: Newsletter4 },
